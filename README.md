@@ -11,5 +11,5 @@ Runs the following:
 ## Usage
 
 ```bash
-$ heroku config:set BUILDPACK_URL=https://github.com/abhchand/family-ties-heroku-buildpack
+heroku buildpacks:set https://github.com/abhchand/family-ties-heroku-buildpack.git
 ```
