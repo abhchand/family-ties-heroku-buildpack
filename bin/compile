@@ -23,9 +23,7 @@ if [ -f $BUILD_DIR/webpack.config.js ]; then
   fi
 
   # The assumption is that `heroku/nodejs` buildpack runs before this and
-  # installs `node` and `yarn`
-  echo "Running 'yarn install'"
-  yarn install
+  # installs `node` and `yarn` and runs `yarn install`
 
   echo "Exporting I18n translations" | indent
   bundle exec i18n export --config ./app/frontend/locales/config.yml
