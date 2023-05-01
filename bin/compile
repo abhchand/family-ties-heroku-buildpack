@@ -29,7 +29,7 @@ if [ -f $BUILD_DIR/webpack.config.js ]; then
   bundle exec i18n export --config ./app/frontend/locales/config.yml
 
   echo "Running webpack build" | indent
-  yarn run prod-build
+  yarn run build:prod
 else
   echo "No webpack config found" | indent
 fi
